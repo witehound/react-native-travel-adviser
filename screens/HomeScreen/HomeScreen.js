@@ -1,11 +1,6 @@
-import {
-  SafeAreaView,
-  View,
-  Text,
-  Image,
-  TouchableOpacity,
-} from "react-native";
+import { SafeAreaView, View, Text, TouchableOpacity } from "react-native";
 import React, { useLayoutEffect } from "react";
+import * as Animatable from "react-native-animatable";
 import { useNavigation } from "@react-navigation/native";
 import { HeroImage } from "../../assets";
 
@@ -47,7 +42,9 @@ const HomeScreen = () => {
       <View className=" absolute w-[350px] h-[350px] rounded-full bottom-36 -right-36 bg-[#00bcc9]" />
       <View className=" absolute w-[350px] h-[350px] rounded-full -bottom-28 -left-36 bg-[#e99265]" />
       <View className=" relative flex-1 flex items-center justify-center">
-        <Image
+        <Animatable.Image
+          animation="fadeIn"
+          easing="ease-out"
           source={HeroImage}
           className=" w-full h-full object-cover -bottom-10 "
         />
