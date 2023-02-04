@@ -14,7 +14,7 @@ const HomeScreen = () => {
   }, []);
 
   return (
-    <SafeAreaView className=" flex-1 relative text-[#2a2b4b]">
+    <SafeAreaView className=" flex-1 relative">
       <View className="p-3 flex gap-4">
         <View className=" flex-row  flex items-center ">
           <View className=" rounded-full h-[70px] w-[70px] bg-black flex justify-center items-center">
@@ -49,7 +49,10 @@ const HomeScreen = () => {
           className=" w-full h-full object-cover -bottom-10 "
         />
 
-        <TouchableOpacity className=" h-[90px] w-[90px] rounded-full absolute bottom-10 border-solid border-l-2  border-r-2  border-t-2 border-[#00bcc9] flex items-center justify-center">
+        <TouchableOpacity
+          onPress={() => navigation.navigate("Discover")}
+          className=" h-[90px] w-[90px] rounded-full absolute bottom-10 border-solid border-l-2  border-r-2  border-t-2 border-[#00bcc9] flex items-center justify-center"
+        >
           <View className=" h-[80px] w-[80px] rounded-full bg-[#00bcc9] flex items-center justify-center ">
             <Text className="text-white text-[30px]">Go</Text>
           </View>
