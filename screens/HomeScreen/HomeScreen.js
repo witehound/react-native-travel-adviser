@@ -1,4 +1,10 @@
-import { SafeAreaView, View, Text, Image } from "react-native";
+import {
+  SafeAreaView,
+  View,
+  Text,
+  Image,
+  TouchableOpacity,
+} from "react-native";
 import React, { useLayoutEffect } from "react";
 import { useNavigation } from "@react-navigation/native";
 import { HeroImage } from "../../assets";
@@ -45,11 +51,12 @@ const HomeScreen = () => {
           source={HeroImage}
           className=" w-full h-full object-cover -bottom-10 "
         />
-        <View className=" h-[90px] w-[90px] rounded-full absolute bottom-10 border-solid border-2 border-[#00bcc9] flex items-center justify-center">
+
+        <TouchableOpacity className=" h-[90px] w-[90px] rounded-full absolute bottom-10 border-solid border-l-2  border-r-2  border-t-2 border-[#00bcc9] flex items-center justify-center">
           <View className=" h-[80px] w-[80px] rounded-full bg-[#00bcc9] flex items-center justify-center ">
             <Text className="text-white text-[30px]">Go</Text>
           </View>
-        </View>
+        </TouchableOpacity>
       </View>
     </SafeAreaView>
   );
