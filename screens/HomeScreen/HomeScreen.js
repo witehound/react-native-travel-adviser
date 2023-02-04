@@ -14,7 +14,7 @@ const HomeScreen = () => {
   }, []);
 
   return (
-    <SafeAreaView className=" flex-1 relative">
+    <SafeAreaView className=" flex-1 relative bg-white">
       <View className="p-3 flex gap-4">
         <View className=" flex-row  flex items-center ">
           <View className=" rounded-full h-[70px] w-[70px] bg-black flex justify-center items-center">
